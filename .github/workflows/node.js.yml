@@ -21,10 +21,10 @@ jobs:
           npm install
           npm run build
       - uses: actions/download-artifact@master
+      - name: npm install, and test
         with:
           name: webpack artifacts
           path: public
-      - name: npm install, and test
 
   test:
     
